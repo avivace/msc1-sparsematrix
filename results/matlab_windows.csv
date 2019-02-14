@@ -1,3 +1,4 @@
+name, error, solveTime, solvePeakMem(Bytes)
 ex19,1.2222e-08,0.14399,4165632
 graham1,2.7075e-11,0.21169,70979584
 kim2,5.7709e-16,750.3955,276074496
