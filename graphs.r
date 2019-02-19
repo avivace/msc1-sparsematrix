@@ -14,7 +14,7 @@ d_subset$patternEntries = d_subset$patternEntries/1000
 # Profiler gives 10 (pages) of the actual allocated peak memory
 # Add a minimum of 600 base ram consumption of the matlab environment (no jvm, cli)
 matlab_win$mem = matlab_win$mem * 10 + 600000000
-matlab_linux$mem = matlab_linux$mem * 9 + 600000000
+matlab_linux$mem = matlab_linux$mem * 10 + 600000000
 
 redAcc1= "#FF5722"
 redAcc2= "#D32F2F"

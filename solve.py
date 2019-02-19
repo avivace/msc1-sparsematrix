@@ -20,10 +20,10 @@ A = mat['Problem']['A'][0][0]
 N = A.shape[0]
 b = A * ones(N)
 tick = time.time()
-x = spsolve(A, b, use_umfpack=False)
+x = spsolve(A, b, use_umfpack=True)
 tock = time.time()
 error = norm(x - ones(N))/norm(ones(N))
 
 
-#peakmem= process.memory_info().peak_wset
-print(sys.argv[1].split("\\")[-1][:-4], ",", error, ",", tock - tick)
+#peakmem= process.memory_info().peak_wset WINDOWS ONLY
+print(sys.argv[1].split("/")[-1][:-4], ",", error, ",", tock - tick, ",",basemem)
